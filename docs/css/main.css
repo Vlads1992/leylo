@@ -3,6 +3,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 30px;
+  padding-bottom: 396px;
+}
+
+@media screen and (max-width: 575px) {
+  .main {
+    padding-bottom: 10px;
+  }
 }
 
 .main .main__company {
@@ -162,7 +169,6 @@
 
 .main .main__paragraph {
   color: #fff;
-  margin-bottom: 396px;
 }
 
 .main .main__description {

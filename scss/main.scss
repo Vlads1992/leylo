@@ -8,6 +8,11 @@ $footer-background-color: #141414;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 30px;
+    padding-bottom: 396px;
+
+    @media screen and (max-width: 575px) {
+            padding-bottom: 10px;   
+    }
 
     #{&}__company {
         font-family: 'Poppins', sans-serif;
@@ -163,7 +168,7 @@ $footer-background-color: #141414;
 
     #{&}__paragraph {
         color: $text-color-white;
-        margin-bottom: 396px;
+        
     }
 
     #{&}__description {
