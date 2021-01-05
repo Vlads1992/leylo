@@ -786,6 +786,20 @@ img {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 575px) {
+  .to-top {
+    width: 35px;
+    height: 35px;
+    line-height: 32px;
+    font-size: 18px;
+    border-radius: 50%;
+    right: 20px;
+  }
+  .to-top-visible {
+    bottom: 80px;
+  }
+}
+
 .to-top:before {
   content: "\f106";
   font-family: 'FontAwesome';
