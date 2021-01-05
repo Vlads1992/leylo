@@ -46,6 +46,12 @@
   display: inline-flex;
 }
 
+@media screen and (max-width: 767px) {
+  .main .main__navigation {
+    display: none;
+  }
+}
+
 .main .main__navigation li {
   padding-right: 46px;
   text-transform: uppercase;
@@ -141,6 +147,12 @@
   line-height: 1;
   letter-spacing: 0px;
   margin-bottom: 25px;
+}
+
+@media screen and (max-width: 575px) {
+  .main .main__heading {
+    font-size: 28px;
+  }
 }
 
 .main .main__dash {
@@ -980,11 +992,23 @@ img {
   font-size: 72px;
 }
 
+@media screen and (max-width: 575px) {
+  .section-counter__timer--item span {
+    font-size: 20px;
+  }
+}
+
 .section-counter__timer--text {
   color: #ffffff;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
+}
+
+@media screen and (max-width: 575px) {
+  .section-counter__timer--text {
+    font-size: 10px;
+  }
 }
 
 .section-counter__off {
