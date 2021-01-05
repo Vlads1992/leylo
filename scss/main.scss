@@ -11,7 +11,9 @@ $footer-background-color: #141414;
     padding-bottom: 396px;
 
     @media screen and (max-width: 575px) {
-            padding-bottom: 10px;   
+
+        background-position: 52% 40%;
+        padding-bottom: 10px;   
     }
 
     #{&}__company {
@@ -225,8 +227,12 @@ $footer-background-color: #141414;
 
 .albums {
     background-color: white;
-    
-    margin-bottom: 160px;
+    padding-top: 165px;
+    padding-bottom: 160px;
+
+    @media screen and (max-width: 575px) {
+    padding-top: 40px;   
+    }
 
     #{&}__paragraph {
         color: $albums-paragraph-color;
@@ -241,8 +247,12 @@ $footer-background-color: #141414;
     }
 
     #{&}__description {
-        margin-top: 165px;
+
         text-align: center;
+
+        @media screen and (max-width: 575px) {
+        font-size: 15px;   
+    }
     }
 
     #{&}__product {
@@ -253,6 +263,9 @@ $footer-background-color: #141414;
     #{&}__headline {
         color: $text-color-black;
         margin-bottom: 30px;
+        @media screen and (max-width: 575px) {
+        font-size: 26px;   
+    }
     }
 
     #{&}__dash {
@@ -263,6 +276,11 @@ $footer-background-color: #141414;
 
     #{&}__image {
         margin-bottom: 36px;
+
+            @media screen and (max-width: 575px) {
+    max-width: 50%;  // u can changed it based on ur need or play with %
+  margin: 0 auto;  
+    }
     }
 
     #{&}__title {

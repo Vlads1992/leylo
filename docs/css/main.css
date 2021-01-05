@@ -8,6 +8,7 @@
 
 @media screen and (max-width: 575px) {
   .main {
+    background-position: 52% 40%;
     padding-bottom: 10px;
   }
 }
@@ -234,7 +235,14 @@
 
 .albums {
   background-color: white;
-  margin-bottom: 160px;
+  padding-top: 165px;
+  padding-bottom: 160px;
+}
+
+@media screen and (max-width: 575px) {
+  .albums {
+    padding-top: 40px;
+  }
 }
 
 .albums .albums__paragraph {
@@ -250,8 +258,13 @@
 }
 
 .albums .albums__description {
-  margin-top: 165px;
   text-align: center;
+}
+
+@media screen and (max-width: 575px) {
+  .albums .albums__description {
+    font-size: 15px;
+  }
 }
 
 .albums .albums__product {
@@ -263,6 +276,12 @@
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 575px) {
+  .albums .albums__headline {
+    font-size: 26px;
+  }
+}
+
 .albums .albums__dash {
   border-top-color: #de2a88;
   margin-bottom: 60px;
@@ -271,6 +290,13 @@
 
 .albums .albums__image {
   margin-bottom: 36px;
+}
+
+@media screen and (max-width: 575px) {
+  .albums .albums__image {
+    max-width: 50%;
+    margin: 0 auto;
+  }
 }
 
 .albums .albums__title {
