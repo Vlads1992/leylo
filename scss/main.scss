@@ -4,7 +4,7 @@ $albums-paragraph-color: #9c9c9c;
 $footer-background-color: #141414;
 
 .main {
-    background-image: url('../img/mt-1796-home-header-bg.jpg');
+    background-image: url('./img/mt-1796-home-header-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 30px;
@@ -349,7 +349,7 @@ img {
 }
 
 .merch {
-    background-image: url('/img/mt-1796-home-bg.jpg');
+    background-image: url('./img/mt-1796-home-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -825,7 +825,7 @@ img {
     
     &-counter {
         padding: 130px 0;
-        background-image: url('/img/mt-1796-home-parallax1.jpg');
+        background-image: url('./img/mt-1796-home-parallax1.jpg');
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
