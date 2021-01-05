@@ -242,6 +242,7 @@
 @media screen and (max-width: 575px) {
   .albums {
     padding-top: 40px;
+    padding-bottom: 20px;
   }
 }
 
@@ -288,6 +289,12 @@
   text-align: center;
 }
 
+@media screen and (max-width: 575px) {
+  .albums .albums__dash {
+    margin-bottom: 20px;
+  }
+}
+
 .albums .albums__image {
   margin-bottom: 36px;
 }
@@ -295,7 +302,6 @@
 @media screen and (max-width: 575px) {
   .albums .albums__image {
     max-width: 50%;
-    margin: 0 auto;
   }
 }
 
@@ -312,6 +318,12 @@
 
 .albums .albums__button {
   color: #ffffff;
+}
+
+@media screen and (max-width: 575px) {
+  .albums .albums__button {
+    margin-bottom: 20px;
+  }
 }
 
 .albums .albums__button:hover {
