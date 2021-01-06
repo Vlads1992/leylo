@@ -34,6 +34,13 @@
   display: flex;
 }
 
+@media screen and (max-width: 767px) {
+  .main .main__logo {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+  }
+}
+
 .main .main__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,6 +52,15 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 300px;
+}
+
+@media screen and (max-width: 767px) {
+  .main .main__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .main .main__navigation {
@@ -1845,7 +1861,7 @@ img {
   z-index: auto;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 767px) {
   .navbar {
     display: block !important;
     text-align: center;

@@ -35,6 +35,9 @@ $footer-background-color: #141414;
 
     #{&}__logo {
         display: flex;
+               @media screen and (max-width: 767px) {
+                align-self: baseline;
+    }
     }
     
 
@@ -44,6 +47,10 @@ $footer-background-color: #141414;
         align-items: center;
 
         margin-bottom: 300px;
+
+                @media screen and (max-width: 767px) {
+        flex-direction: column;  
+    }
     }
 
     #{&}__navigation {
@@ -189,6 +196,8 @@ $footer-background-color: #141414;
         display: inline-flex;
         justify-content: center;
         align-items: center;
+
+
     }
 }
 
@@ -1677,7 +1686,7 @@ img {
     position: relative;
     z-index: auto;
 
-       @media screen and (max-width: 765px) {
+       @media screen and (max-width: 767px) {
         display: block !important;
         text-align: center;
     }
