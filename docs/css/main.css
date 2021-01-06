@@ -1433,23 +1433,6 @@ img {
   overflow-y: scroll;
 }
 
-@media screen and (max-width: 765px) {
-  .section_popup__v3 .table-cell {
-    padding: 15px 0;
-  }
-  .section_popup__v3__content {
-    padding: 20px 15px;
-  }
-  .section_popup__v3__form--title {
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-  .section_popup__v3__form-text {
-    font-size: 14px;
-    margin-bottom: 15px;
-  }
-}
-
 .section_popup__v3 .table {
   padding: 0px 15px;
   display: table;
@@ -1697,5 +1680,39 @@ img {
 .btn--preset-1:hover, .btn--preset-1:focus {
   color: #ffffff;
   background: #412893;
+}
+
+@media screen and (max-width: 765px) {
+  .section__popup-layout {
+    width: 300px;
+  }
+  .section__popup-photo {
+    height: 300px;
+  }
+  .section__popup-content {
+    padding: 10px 5px;
+  }
+  .section__popup-title {
+    font-size: 18px;
+  }
+  .section__popup-subtitle {
+    font-size: 14px;
+  }
+  .section__popup-divider {
+    margin: 5px 0;
+  }
+  .section__popup-text {
+    padding: 5px 0;
+    font-size: 12px;
+  }
+  .section__popup__form--box {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .section__popup__form--field {
+    padding: 10px 7px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
