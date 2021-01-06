@@ -623,6 +623,40 @@ img {
   overflow-y: scroll;
 }
 
+@media screen and (max-width: 575px) {
+  .section_popup-layout {
+    width: 300px;
+  }
+  .section_popup-photo {
+    height: 300px;
+  }
+  .section_popup-content {
+    padding: 10px 5px;
+  }
+  .section_popup-title {
+    font-size: 18px;
+  }
+  .section_popup-subtitle {
+    font-size: 14px;
+  }
+  .section_popup-divider {
+    margin: 5px 0;
+  }
+  .section_popup-text {
+    padding: 5px 0;
+    font-size: 12px;
+  }
+  .section_popup__form--box {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .section_popup__form--field {
+    padding: 10px 7px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}
+
 .section_popup .table {
   padding: 0px 15px;
   display: table;
