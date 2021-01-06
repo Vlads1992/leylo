@@ -9,7 +9,7 @@
 @media screen and (max-width: 575px) {
   .main {
     background-position: 52% 40%;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
   }
 }
 
@@ -60,6 +60,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 60px;
   }
 }
 
@@ -186,6 +187,12 @@
 
 .main .main__paragraph {
   color: #fff;
+}
+
+@media screen and (max-width: 575px) {
+  .main .main__paragraph {
+    font-size: 15px;
+  }
 }
 
 .main .main__description {
