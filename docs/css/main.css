@@ -6,6 +6,10 @@
   padding-bottom: 396px;
 }
 
+.main .box {
+  z-index: 1;
+}
+
 @media screen and (max-width: 575px) {
   .main {
     background-position: 52% 40%;

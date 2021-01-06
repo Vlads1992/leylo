@@ -10,6 +10,10 @@ $footer-background-color: #141414;
     padding-top: 30px;
     padding-bottom: 396px;
 
+    .box {
+        z-index: 1;
+    }
+
 
     @media screen and (max-width: 575px) {
 
