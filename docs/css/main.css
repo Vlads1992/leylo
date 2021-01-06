@@ -1681,38 +1681,4 @@ img {
   color: #ffffff;
   background: #412893;
 }
-
-@media screen and (max-width: 765px) {
-  .section__popup-layout {
-    width: 300px;
-  }
-  .section__popup-photo {
-    height: 300px;
-  }
-  .section__popup-content {
-    padding: 10px 5px;
-  }
-  .section__popup-title {
-    font-size: 18px;
-  }
-  .section__popup-subtitle {
-    font-size: 14px;
-  }
-  .section__popup-divider {
-    margin: 5px 0;
-  }
-  .section__popup-text {
-    padding: 5px 0;
-    font-size: 12px;
-  }
-  .section__popup__form--box {
-    margin-top: 5px;
-    margin-right: 5px;
-  }
-  .section__popup__form--field {
-    padding: 10px 7px;
-    margin-bottom: 10px;
-    font-size: 14px;
-  }
-}
 /*# sourceMappingURL=main.css.map */
