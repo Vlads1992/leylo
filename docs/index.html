@@ -31,6 +31,43 @@
     </div>
 </div>
 <!-- Popup video end -->
+<!-- Popup contact form -->
+<div class="section_popup section_popup__v3" data-name="popup_form1_show">
+    <div class="table">
+        <div class="table-cell">
+            <div class="section_popup__v3__content">
+                <div class="section_popup__v3__close"><i class="fa fa-close"></i></div>
+                <form method="POST" id="contactform1" name="contactform1" class="section_popup__v3__form">
+                    <h2 class="section_popup__v3__form--title">Request a Callback</h2>
+                    <div class="box">
+                        <hr class="dash section_popup__v3__form__dash">
+                    </div>
+                    <div class="section_popup__v3__form-box">
+                        <div class="section_popup__v3__form-group mb-space">
+                            <input type="text" class="section_popup__v3__form-field  form-control" id="form1_name"
+                                name="form1_name" placeholder="Name*">
+                        </div>
+                        <div class="section_popup__v3__form-group mb-space">
+                            <input type="text" class="section_popup__v3__form-field  form-control" id="form1_email"
+                                name="form1_email" placeholder="Email*">
+                        </div>
+                        <div class="section_popup__v3__form-group mb-space">
+                            <input type="text" class="section_popup__v3__form-field  form-control" id="form1_phone"
+                                name="form1_phone" placeholder="Phone*">
+                        </div>
+
+                        <div class="footer-top__form-group">
+                            <button type="submit" class="section_popup__v3__btn btn btn-md btn--preset-1">Send</button>
+                        </div>
+                    </div>
+                    <div class="result-success"></div>
+                    <div class="result-error"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Popup contact form end -->
     <div class="mainbox">
         <div class="main">
             <div class="container">
@@ -106,18 +143,18 @@
                             <span class="albums__product">(CD – Digital)</span></p> 
                         </div>
                         <div class="box">
-                            <a href="#" class="button albums__button">Buy Now</a>
+                            <a href="#" class="button albums__button" data-button="popup_form1">Buy Now</a>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 box">
-                        <img class="albums__image" src="./img/mt-1796-home-album2.jpg" al="phone">
+                        <img class="albums__image" src="./img/mt-1796-home-album2.jpg" alt="phone">
                         <div class="box">
                             <h3 class="albums__title">Eget Libero</h3>
                             <p class="paragraph albums__paragraph">Integer sapien (album),<br>
                             <span class="albums__product">(CD – Digital)</span></p>
                         </div>
                         <div class="box">
-                            <a href="#" class="button albums__button">Buy Now</a>
+                            <a href="#" class="button albums__button" data-button="popup_form1">Buy Now</a>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 box">
@@ -128,7 +165,7 @@
                             <span class="albums__product">(CD – Digital)</span></p>
                         </div>
                         <div class="box">
-                            <a href="#" class="button albums__button">Buy Now</a>
+                            <a href="#" class="button albums__button" data-button="popup_form1">Buy Now</a>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 box">
@@ -139,7 +176,7 @@
                             <span class="albums__product">(CD – Digital)</span></p>
                         </div>
                         <div class="box">
-                            <a href="#" class="button albums__button">Buy Now</a>
+                            <a href="#" class="button albums__button" data-button="popup_form1">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -181,7 +218,7 @@
                     </div>
                 </div>
                 <div class="box">
-                    <a href="#" class="button section-counter__button">Buy Now</a>
+                    <a href="#" class="button section-counter__button" data-button="popup_form1">Buy Now</a>
                 </div>
             </div>
         </div>
@@ -227,7 +264,7 @@
                                                 <img src="./img/mt-1796-home-tour1.png" alt="purple girl">
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-6 pr-0 pl-0 mr-0 ml-0">
                                             <p class="title tour__title">Cornelius - Singha Light
                                             </p>
                                             <p class="paragraph tour__paragraph">28 April 2019 | 18:00 - 23:00</p>
@@ -236,7 +273,7 @@
                                                 <p>Odyssey (SSE Belfast), Belfast, United Kingdom</p>
                                             </div>
                                             <div class="box tour__box">
-                                                <a href="#" class="button tour__button">Buy Now</a>
+                                                <a href="#" class="button tour__button" data-button="popup_form1">Buy Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -259,7 +296,7 @@
                                                 <p>AMI Stadium Christchurch, Christchurch, New Zealand</p>
                                             </div>
                                             <div class="box tour__box">
-                                                <a href="#" class="button tour__button">Buy Now</a>
+                                                <a href="#" class="button tour__button" data-button="popup_form1">Buy Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -280,7 +317,7 @@
                                                 <p>Oklahoma City, Oklahoma, USA</p>
                                             </div>
                                             <div class="box tour__box">
-                                                <a href="#" class="button tour__button">Buy Now</a>
+                                                <a href="#" class="button tour__button" data-button="popup_form1">Buy Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -301,7 +338,7 @@
                                                 <p>Suncorp Stadium, Brisbane, Australia</p>
                                             </div>
                                             <div class="box tour__box">
-                                                <a href="#" class="button tour__button">Buy Now</a>
+                                                <a href="#" class="button tour__button" data-button="popup_form1">Buy Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -400,34 +437,57 @@
                 </div>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
                             <img src="./img/mt-1796-home-merch1.jpg" alt="headphones">
                             <div class="wrapper merch__wrapper">
                                 <p class="merch__name">Exclusive Merch</p>
                                 <p class="merch__price">$26</p>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
                             <img src="./img/mt-1796-home-merch2.jpg" alt="CD">
                             <div class="wrapper merch__wrapper">
                                 <p class="merch__name">Album Dream</p>
                                 <p class="merch__price">$52</p>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
                             <img src="./img/mt-1796-home-merch3.jpg" alt="shirt">
                             <div class="wrapper merch__wrapper">
                                 <p class="merch__name">Promo Shirt</p>
                                 <p class="merch__price">$28</p>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
                             <img src="./img/mt-1796-home-merch4.jpg" alt="CD">
                             <div class="wrapper merch__wrapper">
                                 <p class="merch__name">Album Dream</p>
                                 <p class="merch__price">$45</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe" id="subscribe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="description subscribe__description">Subscribe To The Newsletter</p>
+                        <h2 class="headline subscribe__headline">Subscribe Us</h2>
+                        <div class="box">
+                            <hr class="dash subscribe__dash">
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-8">
+                        <form method="POST" id="contactform2" class="subscribe__form">
+                            <div class="box subscribe__box">
+                                <button type="submit" class="button subscribe__button">Subscribe</button>
+                            </div>
+                        </form>
+
                     </div>
                 </div>
             </div>
@@ -466,6 +526,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <!-- Form validation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.js"></script>
     <script src="./js/init.js"></script>    
 </body>
 </html>

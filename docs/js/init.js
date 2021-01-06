@@ -9,6 +9,16 @@
         $('.section_popup[data-name=popup_show]').fadeOut();
     });
 
+         $('.albums__button, .section-counter__button, .tour__button[data-button=popup_form1]').click(function(e)  {
+        e.preventDefault();
+        $('.section_popup[data-name=popup_form1_show]').fadeIn();
+        $('body').css('overflow', 'hidden');
+    });
+    $('.section_popup__v3__close').click(function() {
+        $('body').css('overflow', 'visible');
+        $('.section_popup[data-name=popup_form1_show]').fadeOut();
+    });
+
     /* popup video end */
         /* popup-btn */
     $('.btn_popup').click(function() {
@@ -166,3 +176,68 @@
             }
         }
     });*/
+
+        /* CONTACT FORM POPUP */
+    /* declare contactForm */
+    var $contactForm = $('#contactform1');
+    $(".result-error").hide();
+    $(".result-success").hide();
+    /* adding rules for validation fields */
+    $contactForm.validate({
+        errorClass: 'section_popup__v3__form-error',
+        rules: {
+            form1_name: {
+                required: true
+            },
+            form1_email: {
+                required: true,
+                email: true
+            },
+            form1_phone: {
+                required: true
+            }
+        },
+        /* adding error message text for validation fields */
+        messages: {
+            form1_name: {
+                required: "Field is required"
+            },
+            form1_email: {
+                required: "Field is required",
+                email: "Incorrect email"
+            },
+            form1_phone: {
+                required: "Field is required"
+            }
+        },
+        /* ajax request properties */
+        submitHandler: function() {
+            /* get values from form fields */
+            var form_data = {
+                'Name': $('#form1_name').val(),
+                'Phone': $('#form1_phone').val(),
+                'Email': $('#form1_email').val()
+            }
+            for (var key in form_data) {
+                var value = form_data[key];
+                form_data[value.name] = value.value;
+            }
+            $.ajax({
+                type: 'POST',
+                url: '/sendmail.php',
+                data: form_data,
+                dataType: "json",
+            }).done(function(data) {
+                if (data.type == "error") {
+                    $(".result-error").show();
+                    $(".result-error").html(data.text);
+                }
+                if (data.type == "done") {
+                    $(".result-success").show();
+                    $(".result-success").html(data.text);
+                    $(".result-error").hide();
+                }
+            });
+            $('.result-error').hide();
+        }
+    });

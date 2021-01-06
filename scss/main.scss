@@ -1181,6 +1181,11 @@ img {
                 border-bottom: none;
                 margin-bottom: 10px;
 
+                @media screen and (max-width: 575px) {
+                display: flex;
+                flex-direction: column;
+    }
+
             &--content {
                 width: 100%;
                 max-width: 100%;
@@ -1195,6 +1200,8 @@ img {
                 padding-right: 0px;
                 padding-bottom: 0px;
                 padding-left: 0px;
+
+
 
                 background-color: transparent;
                 .container {
@@ -1280,5 +1287,258 @@ img {
    display: none;
 }
 
+.subscribe {
+    padding-top: 125px;
+    padding-bottom: 120px;
 
+        #{&}__description {
+        color: $text-color-black;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    #{&}__headline {
+        color: $text-color-black;
+        margin-bottom: 15px;
+    }
+
+    #{&}__dash {
+        border-top-color: #de2a88;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+            #{&}__button {
+            color: #ffffff;
+            background-color: #de2a88;
+            text-decoration: none;
+            &:hover {
+                
+                background-color:#412893;
+            }
+
+        }
+
+ 
+}
+
+/* CONTACT FORM POPUP STYLES */
+.section_popup__v3 {
+
+
+
+    display:none;
+    position:fixed;
+    z-index:1040;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    overflow-y:scroll;
+    .table {
+        padding:0px 15px;
+        display:table;
+        position:absolute;
+        left:0px;
+        top:0px;
+        width:100%;
+        height:100%;
+        &-cell {
+            display:table-cell;
+            vertical-align:middle;
+            padding: 150px 0px;
+        }
+    }
+    &__close {
+        position:absolute;
+        top:-30px;
+        right:0px;
+        cursor:pointer;
+        opacity: 0.7;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        i {
+            color:#fff;
+        }
+        &:hover {
+            opacity: 1;
+        }
+    }   
+    &__content {
+        background-image: url('../img/mt-1796-home-bg.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        padding: 50px 30px;
+    }
+    &__form {
+
+
+        width: 100%;
+        text-align: center;
+        &--title {
+            font-weight: 700;
+            font-style: normal;
+            font-family: 'Poppins', sans-serif;
+            color: $text-color-white;
+            font-size: 38px;
+            line-height: 1.4;
+            letter-spacing: 0px;
+            text-align: center;
+            margin-bottom: 19px;
+            span {
+                font-weight: 700;
+                display: inline-block;
+                color: #bda87f;
+            }
+        }
+        &__dash {
+        border-top-color: #de2a88;
+        margin-bottom: 30px;
+        text-align: center;
+        }
+
+        &-text {
+            font-weight: 300;
+            font-style: normal;
+            font-family: 'Poppins', sans-serif;
+            color: #1f1f1f;
+            font-size: 16px;
+            line-height: 1.7;
+            letter-spacing: 0px;
+            margin-bottom: 30px;
+        }
+        &-group {
+            position: relative;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+        &-field {
+            border: 1px solid #f2f2f2;
+            height: 45px;
+            line-height: normal;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 15px;
+            color: #1f1f1f;
+            background: #f2f2f2;
+            outline: none;
+            font-weight: 300;
+            border-radius: 0;
+            font-family: 'Poppins', sans-serif;
+            &--textarea {
+                min-height: 140px;
+            }
+            &.form-control {
+                box-shadow: none;
+                &:focus {
+                    box-shadow: none;
+                    background: #f2f2f2;
+                    border-color: #f2f2f2;
+                }
+            }
+        }
+        &-error {
+            border-color: #e82914;
+        }
+        &-group {
+
+            
+
+            label {
+                font-family: 'Poppins', sans-serif;
+                font-size: 10px;
+                text-align: left;
+                display: inline-block;
+                position: absolute;
+                color: #ab1111;
+                top: 3px    ;
+                right: 16px;
+                transition: .3s;
+                border:none;
+            }
+        }
+        ::placeholder { 
+            font-size: 14px;
+            color: #1b293c;
+            opacity: 1; 
+        }
+        :-ms-input-placeholder { 
+            color: #1b293c;
+        }
+        ::-ms-input-placeholder { 
+            color: #1b293c;
+        }
+        &-btn {
+            margin-top: 20px;
+        }
+        .result-success {
+            color: #4ad313;
+        }
+        .result-error {
+            color: #e82914;
+        }
+    }
+}
+
+/* Button size classes */
+
+.btn {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    line-height: 20px;
+    transition: .3s;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    z-index: 1;
+    border: none;
+    border-radius: 0;
+    &:focus {
+        box-shadow: none;
+    }
+
+    &-sm {
+        font-size: 14px;
+        padding: 12px 10px;
+        min-width: 140px;
+    }
+    &-md {
+        font-size: 12px;
+        padding: 15px 10px;
+        min-width: 150px;
+    }
+    &-lg {
+        font-size: 16px;
+        padding: 20px 10px;
+        min-width: 180px;
+    }
+    &--preset-1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+        color: #ffffff;
+        background: #d70070;
+        &:hover , &:focus {
+            color: #ffffff;
+            background: #412893;
+        }
+    }
+
+}
 
