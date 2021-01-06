@@ -334,26 +334,49 @@ $footer-background-color: #141414;
 
 .songs {
     background-color: white;
-    
-    margin-bottom: 160px;
+    padding-top: 165px;
+    padding-bottom: 160px;
+
+    @media screen and (max-width: 575px) {
+    padding-top: 20px;
+    padding-bottom: 40px;
+                            }
 
 
     #{&}__description {
-        margin-top: 165px;
+
         color: $text-color-black;
         text-align: center;
         margin-bottom: 5px;
+
+        @media screen and (max-width: 575px) {
+        font-size: 15px;  
+                            }
     }
 
     #{&}__headline {
         color: $text-color-black;
         margin-bottom: 15px;
+
+        @media screen and (max-width: 575px) {
+        font-size: 26px;  
+                            }
     }
 
     #{&}__dash {
         border-top-color: #de2a88;
         margin-bottom: 60px;
         text-align: center;
+
+        @media screen and (max-width: 575px) {
+        margin-bottom: 15px;
+                            }
+    }
+
+    #{&}__soundcloud {
+        @media screen and (max-width: 575px) {
+        padding-top: 25px;
+                            }
     }
 }
 
@@ -392,26 +415,50 @@ img {
     background-image: url('../img/mt-1796-home-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    
-    
+    padding-top: 125px;
+    padding-bottom: 120px;
+
+    @media screen and (max-width: 575px) {
+    padding-top: 20px;
+    padding-bottom: 40px; 
+        }
+
+    img {
+                    @media screen and (max-width: 575px) {
+    max-width: 50%;  // u can changed it based on ur need or play with %
+        padding-top: 25px;
+    }
+    }
     
 
     #{&}__description {
         color: $text-color-white;
         text-align: center;
         margin-bottom: 5px;
-        margin-top: 125px;
+
+        @media screen and (max-width: 575px) {
+        font-size: 15px;  
+        }
+        
     }
 
     #{&}__headline {
         color: $text-color-white;
         margin-bottom: 15px;
+
+        @media screen and (max-width: 575px) {
+        font-size: 26px;  
+        }
     }
 
     #{&}__dash {
         border-top-color: #ffffff;
         margin-bottom: 60px;
         text-align: center;
+
+        @media screen and (max-width: 575px) {
+        margin-bottom: 15px;  
+        }
     }
 
     #{&}__wrapper {
@@ -422,7 +469,7 @@ img {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 120px;
+ 
     }
 
     #{&}__name {
@@ -511,24 +558,44 @@ img {
     padding-top: 125px;
     padding-bottom: 30px;
 
+        @media screen and (max-width: 575px) {
+        padding-top: 20px;  
+                            }
+
         #{&}__description {
         color: $text-color-white;
         text-align: center;
+
+        @media screen and (max-width: 575px) {
+        font-size: 15px;  
+                            }
     }
 
         #{&}__headline {
         color: $text-color-white;
         margin-bottom: 15px;
+
+        @media screen and (max-width: 575px) {
+        font-size: 26px;  
+                            }
     }
 
         #{&}__dash {
         border-top-color: #ffffff;
         margin-bottom: 60px;
         text-align: center;
+
+        @media screen and (max-width: 575px) {
+        margin-bottom: 15px;  
+                            }
     }
 
         #{&}__picture {
-        position: relative;    
+        position: relative;  
+    
+        @media screen and (max-width: 575px) {
+        padding-top: 25px;  
+                            }
     }
 
 
@@ -1067,16 +1134,28 @@ img {
 
 .tour {
         background-color: white;
+    padding-top: 165px;
+    padding-bottom: 160px;
+
+                                        @media screen and (max-width: 575px) {
+        padding-top: 20px;
+        padding-bottom: 40px;
+                            }
     
-    margin-bottom: 160px;
 
         #{&}__description {
         text-align: center;
+
+
     }
 
         #{&}__headline {
         color: $text-color-black;
         margin-bottom: 30px;
+
+                                    @media screen and (max-width: 575px) {
+        font-size: 28px;  
+                            }
     }
 
         #{&}__dash {
@@ -1107,9 +1186,14 @@ img {
                 line-height: 1.4;
                 letter-spacing: 0px;
             }
+            
+
+            @media screen and (max-width: 575px) {
+        font-size: 20px;  
+                            }
         }
         &__description {
-            margin-top: 165px;
+
             font-weight: 700;
             font-style: normal;
             font-family: 'Lato', sans-serif;
@@ -1117,6 +1201,10 @@ img {
             line-height: 1.4;
             letter-spacing: 1px;
             text-transform: uppercase;
+
+                            @media screen and (max-width: 575px) {
+        font-size: 15px;  
+                            }
         }
 
         &__tester {
@@ -1160,6 +1248,10 @@ img {
                 font-size: 16px;
                 line-height: 1.4;
                 letter-spacing: 0px;
+
+                @media screen and (max-width: 575px) {
+                font-size: 15px;  
+                            }
 
             }
         }
@@ -1320,11 +1412,19 @@ img {
         color: $text-color-black;
         text-align: center;
         margin-bottom: 5px;
+
+        @media screen and (max-width: 575px) {
+        font-size: 15px;  
+        }
     }
 
     #{&}__headline {
         color: $text-color-black;
         margin-bottom: 15px;
+
+        @media screen and (max-width: 575px) {
+        font-size: 26px;  
+        }
     }
 
     #{&}__dash {
