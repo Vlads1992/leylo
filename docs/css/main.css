@@ -1433,6 +1433,23 @@ img {
   overflow-y: scroll;
 }
 
+@media screen and (max-width: 765px) {
+  .section_popup__v3 .table-cell {
+    padding: 15px 0;
+  }
+  .section_popup__v3__content {
+    padding: 20px 15px;
+  }
+  .section_popup__v3__form--title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .section_popup__v3__form-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
+
 .section_popup__v3 .table {
   padding: 0px 15px;
   display: table;
