@@ -583,7 +583,41 @@ img {
     background:rgba(0,0,0,0.7);
     overflow-y:scroll;
 
-
+    @media screen and (max-width: 575px) {
+&-layout {
+            width: 300px;
+        }
+        &-photo {
+            height: 300px;
+        }
+        &-content {
+            padding: 10px 5px;
+        }
+        &-title {
+            font-size: 18px;
+        }
+        &-subtitle {
+            font-size: 14px;
+        }
+        &-divider {
+            margin: 5px 0;
+        }
+        &-text {
+            padding: 5px 0;
+            font-size: 12px;
+        }
+        &__form {
+            &--box {
+                margin-top: 5px;
+                margin-right: 5px;
+            }
+            &--field {
+                padding: 10px 7px;
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+        }
+    }
 
 
 
@@ -1346,7 +1380,24 @@ img {
     background:rgba(0,0,0,0.7);
     overflow-y:scroll;
 
-
+    @media screen and (max-width: 575px) {
+        .table-cell {
+            padding: 15px 0;
+        }
+        &__content {
+            padding: 20px 15px;
+        }
+        &__form {
+            &--title {
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+            &-text {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+        }
+    }
 
 
     .table {
