@@ -1046,6 +1046,12 @@ img {
   text-align: center;
 }
 
+@media screen and (max-width: 765px) {
+  .section-counter__delimeter {
+    min-width: 0px;
+  }
+}
+
 .section-counter__timer {
   font-family: 'Poppins', sans-serif;
   padding: 50px 0;
@@ -1069,6 +1075,12 @@ img {
   position: relative;
 }
 
+@media screen and (max-width: 765px) {
+  .section-counter__timer--item {
+    height: auto;
+  }
+}
+
 .section-counter__timer--item span {
   color: #ffffff;
   font-style: normal;
@@ -1076,7 +1088,7 @@ img {
   font-size: 72px;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 765px) {
   .section-counter__timer--item span {
     font-size: 20px;
   }
@@ -1281,6 +1293,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -1360,6 +1373,12 @@ img {
 
 .tour__item:not(:last-child) {
   margin-right: 40px;
+}
+
+@media screen and (max-width: 575px) {
+  .tour__item:not(:last-child) {
+    margin-right: 0px;
+  }
 }
 
 .tour__link {
